@@ -4,9 +4,8 @@ on:
   workflow_dispatch:
 
   schedule:
-    # Runs at 7:17 AM Perth time, Tuesday-Saturday.
-    # This captures the preceding US and Australian trading day.
-    - cron: "17 7 * * 2-6"
+    # Runs at 5:17 PM Perth time, Monday-Saturday.
+    - cron: "17 17 * * 1-6"
       timezone: "Australia/Perth"
 
 permissions:
